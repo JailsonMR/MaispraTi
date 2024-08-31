@@ -4,37 +4,11 @@ Fibonacci utilizando um loop for.
 */
 
 let quantidade = 10
-let sequencia = 0
-let numAnt = 0
-let numAtual = 0
 
+let fibonacci = [0, 1]
 
-for(n = 0; n < quantidade; n++) {
-    console.log(sequencia)
-    sequencia++
-    numAnt = sequencia - 1
-    numAtual = sequencia
+for(let count = 2; count < quantidade; count++ ) {
+    fibonacci.push(fibonacci[count - 1] + fibonacci[count -2])
 }
 
-
-// seq 0
-// numAnt 0
-// seq 1
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+console.log(fibonacci)
