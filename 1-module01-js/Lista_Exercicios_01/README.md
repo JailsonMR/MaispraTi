@@ -1,4 +1,4 @@
-Instruções para como ezecuatar localmente em sua máquina:
+Instruções para execuatar localmente em sua máquina:
 
 Pré-requisito:
 
