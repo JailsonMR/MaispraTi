@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    width: 100%;
+    padding: 0;
+}
+li {
+    color: #097292;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0px; 
+}
+li:hover{
+    color: #ffffff;
+    background-color: #8f8c8c;
+}
+li:last-child{
+    color: #21910b;
+    font-style: italic;
+}
