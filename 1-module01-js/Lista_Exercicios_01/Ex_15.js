@@ -12,4 +12,7 @@ for(let count = 2; count < quantidade; count++ ) {
 }
 
 console.log(fibonacci)
+<<<<<<< HEAD
 
+=======
+>>>>>>> a1a38b799e31e53b9d2bb7d28d2743a4d6569a64
