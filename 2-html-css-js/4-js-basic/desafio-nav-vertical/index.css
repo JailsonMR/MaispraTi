@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 250px;
+    background-color: rgb(40, 88, 88);
+    height: 100vh;
+    gap: 30px;
+}
+
+#menu li {
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #dbdada;
+    padding: 10px;
+}
+
+#menu li:hover {
+    background-color: rgb(53, 109, 109);;
+}

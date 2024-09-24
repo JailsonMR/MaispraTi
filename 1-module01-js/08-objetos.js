@@ -1,176 +1,153 @@
-// let serie = {
-//     nome: "The Boys",
-//     genero: ["Ação, Parória, Herois"],
-//     nrTemporadas: 4,
-//     status: "Em andamento",
-//     classificacao: 18,
-//     nrEpsodios: {
-//         temp1: 10,
-//         temp2: 10,
-//         temp3: 50,
-//     },
-
-//     mostrarCaracteristicas: function() {
-//         return `O nome da séria é: ${this.nome} e sua classificação é ${this.classificacao}`
-//     }
-
-// }
-
-// console.log(serie.nome) // mostra somente o nome da série
+// Objeto 'serie' com propriedades e um método
+let serie = {
+    nome: "The Boys",
+    genero: ["Ação", "Paródia", "Heróis"],
+    nrTemporadas: 4,
+    status: "Em andamento",
+    classificao: 18,
+    nrEpisodios: {
+        temp1: 10,
+        temp2: 10,
+        temp3: 50
+    },
+    mostrarCaracteristicas: function() {
+        return `O nome da série é: ${this.nome} e sua classificação é +${this.classificao}`;
+    }
+};
 
 // console.log(serie.mostrarCaracteristicas())
 
+// Objeto 'livro' com propriedades e um método
+let livro = {
+    titulo: "O Hobbit",
+    autor: "J. R. R. Tolkien",
+    year: 1925,
+    mostrarCaracteristicas: function() {
+        return `${this.titulo} foi escrito por ${this.autor}`;
+    }
+};
 
-// ========================================================
-// Exercicio - FAZER UM LIVRO
+// console.log(livro.mostrarCaracteristicas())
 
-// let livro = {
-//     titulo: "Bíblia",
-//     autor: "Deus",
-//     sublivros: {
-//         liv_1: "Mateus",
-//         liv_2: "Marcos",
-//         liv_3: "Lucas",
-//         liv_4: "João",
-//         liv_5: "Atos",
-//         liv_6: "Romanos",
-//     },
-//     corCapa: "Preta",
-//     valorMedio: 100.00,
-//     capitulos: 3800,
-//     versiculos: 120235,
-//     mostrarCaracteristicas: function() {
-//         return (this.titulo + " foi escrito por " + this.autor)
-//     }
-// }
+// Objeto 'carro' com propriedades e um método
+let carro = {
+    nome: 'Herby',
+    modelo: 'Marea',
+    velocidadeMaxima: 350,
+    ano: 2005,
+    acelerar: function() {
+        return "Acelerando com pé no porão";
+    }
+};
 
-// //console.log(livro.mostrarCaracteristicas())
-
-// console.log(livro.sublivros)
-
-// =======================================================================
-// Exercicio - FAZER UM CARRO
-// let carro = {
-//     nome: "Herby",
-//     modelo: "Marea",
-//     velMax: 350,
-//     ano: 2005,
-//     acelerar: function(){
-//         return "Acelerando carro na rua 01"
-//     }
-// }
-
-// // console.log(carro)
-
+// console.log(carro)
 // console.log(carro.acelerar())
 
-// =======================================================================
-// Exercicio - ATLETA (Refazer)
+// Criação de objeto 'moto' usando variáveis existentes
+let motor = "1000";
+let nome = "bmw s1000rr";
+let tipo = "esportiva";
 
-// let atleta = {
-//     nome: "Rayssa Leal",
-//     esporte: "Skate",
-//     idade: 16
-// }
+let moto = {
+    nome: nome,
+    tipo: tipo,
+    motor: motor
+};
 
-// atleta.nacinalidade = 'Brasil'
-// atleta.medalhas = {
-//     ouro: 10,
-//     prata: 1,
-//     bronze: 1
-// }
+// console.log(moto)
 
-////////////////////////////////////////////////////////////////////////////////////////////
-// ========================================================
-// FUNÇÃO CONSTRUTORA (concludo)   ///////////////////////////////////////////////////////////
+// Objeto 'atleta' com propriedades, adicionando novas propriedades e métodos
+let atleta = {
+    nome: "Rayssa Leal",
+    esporte: "Skate street",
+    idade: 16
+};
 
-// function computador(processador, gpu, ram, armazenamento) {
-//     this.processador = processador
-//     this.gpu = gpu
-//     this.ram = ram
-//     this.armazenamento = armazenamento
+atleta.nacionalidade = 'Brasil';
+atleta.medalhas = {
+    ouro: 10,
+    prata: 1,
+    bronze: 1
+};
 
-//     this.ligar = function () {
-//         return `O ${this.processador} está funcionando!`
-//     }
+atleta.celebrarVitoria = function () {
+    return "GANHEI!";
+};
 
-//     this.mostrarEspecificacoes = function () {
-//         return `
-//         processador: ${this.processador}
-//         gpu: ${this.gpu}
-//         ram: ${this.ram}
-//         armazenamento: ${this.armazenamento}`
-//     }
-// }
+// console.log(atleta)
+// console.log(atleta.celebrarVitoria())
 
-// let pc = new computador("Raizem 5", "5556G", "16GB", "SSD 250GB")
+// Clonando um objeto e adicionando uma nova propriedade
+let obj1 = {
+    nome: "Bruce",
+    profissao: "Batman" 
+};
 
-// console.log(pc.ligar())
+let obj2 = obj1;
 
-
-function livro(nome, cor, autor, ){
-
-}
-
-
-
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-// ================================================================================
-
-
-// // OBJ
-
-// let obj1 = {
-//     nome: "Bruce",
-//     profissao: "Batman"
-// }
-
-// let obj2 = obj1 // Cria uma referência(regra para objeto) -> tudo que muda em um muda no outro
-
-// obj1.idade = 35
-
-// obj2.companheiro = "Robin"
+obj2.companheiro = "Robin";
 
 // console.log(obj1)
 // console.log(obj2)
 
-//====================================================
-// FOR IN e FOR OF (ESTUDAR E TESTAR)
+// Função construtora para criar objetos 'computador'
+function computador(processador, gpu, ram, armazenamento) {
+    this.processador = processador;
+    this.gpu = gpu;
+    this.ram = ram;  
+    this.armazenamento = armazenamento;
 
-// ===============================================================
-// function jogos(titulo, genero, anoLancamento, empresa, jogar){
-//     return {
-//         titulo,
-//         genero,
-//         anoLancamento,
-//         empresa,
-//         jogar
-//     }
-// }
+    this.ligar = function() {
+        console.log(`O ${this.processador} está funcionando!`);
+    };
 
+    this.mostrarEspecificacoes = function() {
+        return `
+            processador: ${this.processador}
+            gpu: ${this.gpu}
+            ram: ${this.ram}
+            armazenamento: ${this.armazenamento}`;
+    };
+}
 
-// let jogo1 = jogos("Final Fantasy", "RPG", "1997", "Square Soft", "Jogando")
+let pc = new computador("i9", "RTX4090", "16GB", "500GB SSD");
+// console.log(pc.mostrarEspecificacoes())
 
-// for(let chave in jogo1) {
-//     console.log(`${chave}: ${jogo1[chave]}`)
-// }
+// Função fábrica para criar objetos 'jogos'
+function jogos(titulo, genero, anoLancamento, empresa, jogar) {
+    return {
+        titulo, 
+        genero,
+        anoLancamento,
+        empresa,
+        jogar
+    };
+}
 
+let jogo1 = jogos("Final Fantasy", "RPG", "1997", "Square Soft", () => { return 'Jogando' });
 
+// console.log(jogo1.jogar())
 
+// Iterando sobre as propriedades de um objeto usando 'for...in'
+for(let chave in jogo1) {
+    // console.log(`${chave}: ${jogo1[chave]}`)
+}
 
+// Iterando sobre elementos de um array multidimensional usando 'for...in'
+const jogadores = [['Pelé', 'Romário'], 'CR7', 'Messi'];
 
+for(let key in jogadores) {
+    // console.log(jogadores[key])
+}
 
+// Iterando sobre os caracteres de uma string usando 'for...of'
+const NOME = "Silva";
 
+for(let char of NOME) {
+    // console.log(char)
+}
 
-
-
-
-
-
-
-
-
+// Iterando sobre as chaves de um objeto usando 'for...of' com 'Object.keys'
+for(let jogo of Object.keys(jogo1)) {
+    // console.log(jogo1[jogo])
+}

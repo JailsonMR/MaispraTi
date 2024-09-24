@@ -1,0 +1,57 @@
+<!--
+Formulário de Contato com Validação
+
+    Objetivo: Criar um formulário de contato, com validação.
+    Instruções:
+        Crie um formulário com os seguintes campos:
+            Nome (campo obrigatório)
+            E-mail (campo obrigatório e deve validar formato de e-mail)
+            Mensagem (campo obrigatório)
+            Telefone (campo opcional)
+            Assunto (campo de seleção com 3 opções: Dúvida, Suporte, Feedback)
+            Checkbox para aceitar os Termos de Uso (obrigatório)
+        Inclua um botão de envio que só deve ser habilitado se todos os campos obrigatórios forem preenchidos corretamente.
+        Adicione um placeholder para cada campo.
+
+        Utilize HTML5 para adicionar validação dos campos obrigatóris e padrões de validação (como o campo de e-mail e número de telefone).
+        CSS - Estilização e Responsividade:
+
+        Estilização:
+    
+            Adicione uma borda ao redor do formulário com cantos arredondados.
+            Utilize espaçamento adequado entre os campos.
+            Altere a cor de fundo e o estilo da fonte.
+            Aplique foco (:focus) nos campos, destacando-os quando o usuário estiver interagindo com eles.
+            Estilize o botão de envio para parecer um botão moderno (com sombras, efeito hover, e animação suave quando pressionado).
+    Alinhe os rótulos (<label>) dos campos à esquerda e os inputs à direita, criando uma boa legibilidade.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="div-form">
+        <h2>Entre em Contato</h2>
+        <form action="/enviar" method="POST">
+            <div class="form-item">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-item">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

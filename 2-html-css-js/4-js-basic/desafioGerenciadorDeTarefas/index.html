@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+<div class="content">
+    <h1 id="title">Gerenciador de Tarefas</h1>
+
+    <form id="formGerenciador">
+        <input id="nomeTarefa" type="text">
+        <input id="addTarefa" type="button" value="Adicionar Tarefa">
+    </form>
+
+    <hr>
+
+    <ul id="listaTarefas">
+        <li id="item">
+            Nenhuma Tarefa adicionada! <input type="checkbox">
+        </li>
+    </ul>
+
+    <input id="todas" type="button" value="Todas">
+    <input id="concluidas" type="button" value="Concluidas">
+    <input id="naoConcluidas" type="button" value="Não Concluidas">
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

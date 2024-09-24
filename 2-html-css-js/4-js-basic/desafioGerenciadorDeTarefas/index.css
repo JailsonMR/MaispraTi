@@ -1,0 +1,71 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: auto;
+}
+
+.content {
+    width: 600px;
+    margin: 100px auto;
+    background-color: #b7b9b7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #06584b; 
+    text-align: center; 
+}
+
+#formGerenciador {
+    text-align: center;
+}
+
+#listaTarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #97adaa;
+}
+
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type=text] {
+    margin: 5px; 
+    padding: 10px 8px; 
+    background-color: #ffffff; 
+    color: rgb(94, 92, 92); 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    width: 80%;
+}
+
+input[type=button] {
+    margin: 0px; /* Adiciona um espaçamento externo (margem) de 5px ao redor de cada botão, separando-o de outros elementos. */
+    padding: 10px 20px; /* Define o espaço interno (padding) dentro do botão: 10px no topo e na parte inferior, 20px nas laterais. */
+    background-color: #138a2e; /* Define a cor de fundo do botão para um tom de verde (#28a745). */
+    color: white; /* Define a cor do texto do botão como branco. */
+    border: none; /* Remove as bordas padrão dos botões. */
+    cursor: pointer; /* Altera o cursor para um ponteiro (mãozinha) quando o mouse passa sobre o botão, indicando que é clicável. */
+    border-radius: 5px; /* Adiciona um arredondamento de 5px nos cantos do botão. */
+}
+
+/* Aplica o efeito hover, ou seja, quando o usuário passa o mouse sobre o botão. */
+input[type=button]:hover {
+    background-color: #5fce77; /* Muda a cor de fundo do botão para um tom mais escuro de verde (#218838) quando o mouse passa por cima dele. */
+}
+
+/* Aplica estilos alternados aos itens pares da lista (nth-child(even) significa "n-ésimo filho par"). */
+ul li:nth-child(even) {
+    background-color: #0a0909; /* Altera a cor de fundo dos itens pares para um tom mais escuro de cinza (#bbb). */
+}
