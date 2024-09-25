@@ -21,7 +21,7 @@ h1 ~ p {
 /* Seleciona links que já foram visitados */
 /* Atualmente vazio, você pode adicionar estilos como cor diferente para links visitados */
 a:visited {
-    
+    color: #5e2020;
 }
 
 /* Insere o conteúdo "Seu nome" antes de cada <p> e define a cor desse conteúdo como aqua */
