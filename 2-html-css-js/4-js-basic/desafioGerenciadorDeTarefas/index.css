@@ -69,3 +69,5 @@ input[type=button]:hover {
 ul li:nth-child(even) {
     background-color: #0a0909; /* Altera a cor de fundo dos itens pares para um tom mais escuro de cinza (#bbb). */
 }
+
+/**/
