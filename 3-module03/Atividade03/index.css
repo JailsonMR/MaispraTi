@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e0e0;
+    color: #fff;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a212c;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 20px;
+    color: #cfcfcf;    
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 65px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.hr-linha-100 {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    background-color: rgba(185, 185, 185, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#menu-nav { /* UL */
+    display: flex;
+    height: 60px;
+    gap: 5%;
+        
+}
+
+#menu-nav li {
+    height: 100%;
+    width: 140px;
+    position: relative;
+    display: inline-block;  
+    
+}
+
+#menu-nav li:hover {
+    background-color: #2e3849;
+    border-radius: 12px 12px 0px 0px;
+    
+}
+
+#menu-nav li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #cadd20; /* Cor da borda */
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease 0s;
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+  
+#menu-nav li:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom center;
+    }
+
+#menu-nav li a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: #cadd20;
+    text-align: center;
+    align-content: center;
+    transition: color 0.5s ease;
+}
+
+#menu-nav li a:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    background-color: #105e4de8;
+    padding: 40px;
+    width: 70%;
+    color: #fff;
+    font-family: "Carme", sans-serif;
+    font-style: normal;
+}
+
+.presentation { /* DIV */
+    flex: 6;
+    padding-right: 40px;
+}
+
+.titulo-postagem {
+    font-size: 50px;
+}
+
+.sub-titulo-postagem {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.p-postagem {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.p-postagem span {
+    font-size: 20px;
+}
+
+.img-main { /* DIV */
+    flex: 4;
+}
+
+.img-main img {
+    width: 100%;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(114, 114, 114, 0.9);
+}
+
+aside {
+    background-color: #12837f;
+    width: 30%;
+}
+
+aside h2 {
+    padding: 15px 10px;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0px;
+    color: #aeb90c;
+    box-shadow: 1px 1px 1px rgba(226, 224, 224, 0.2);
+}
+
+#menu-aside { /* UL */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+#menu-aside li {
+    text-align: center;
+    width: 60%;
+    min-width: 160px;
+    height: 45px;
+    align-content: center;
+    border-bottom: 1px solid rgba(226, 224, 224, 0.3);
+}
+
+#menu-aside li:hover {
+    border-bottom: 1px solid rgba(226, 224, 224, 0.0);
+    background-color: #199490;
+}
+
+#menu-aside li a {
+    display: inline-block;
+    color: #cadd20;
+    height: 100%;
+    width: 100%;
+    align-content: center;   
+    
+    
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+#menu-aside li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #cadd20;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-aside li a:hover {
+    color: #ffffff;
+    
+}
+
+#menu-aside li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+footer {
+    background-color: #055474;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: auto;
+    color: #fff;
+}
