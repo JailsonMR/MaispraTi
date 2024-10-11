@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Geneva, Tahoma, sans-serif;
+    background-color: #fdfdfd;
+}
+
+header {
+    height: 60px;
+    box-shadow: 10px 0px 10px #b6b6b6;
+    margin-bottom: 25px;
+    
+}
+
+h1 {
+    font-weight: normal;
+    padding: 10px 30px;
+    color: #202020;
+}
+
+main {
+    padding: 0px 25px;
+
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+#cep {
+    margin-right: 30px;
+    color: #3a3a3a;
+}
+
+#cep:focus {
+    outline: 0;
+    border: 1px solid #00967d;
+}
+
+#cep:hover {
+    border: 1px solid #00967d;
+}
+
+#form-cep button{ 
+    color: #ffffff;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #1c8103;
+}
+
+#form-cep button:hover{ 
+    background-color: #289b0b;
+}
+
+#form-cep label {
+    color: #6d6d6d;
+    font-size: 12px;
+    color: #6d6d6d;
+}
+
+#resultado {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#resultado label {
+    color: #6d6d6d;
+    font-size: 12px;
+}
+
+#resultado input {
+    background-color: #eeeeee; 
+    color: #3a3a3a;
+}
+
+#resultado input:focus {
+    outline: 0;
+    border: 1px solid #00967d;
+}
+
+input::placeholder {
+    color: rgb(199, 199, 199);
+  }
+

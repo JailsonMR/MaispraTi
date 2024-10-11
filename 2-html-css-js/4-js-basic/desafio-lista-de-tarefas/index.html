@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Lista de Tarefas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <span></span>
+            <strong>To Do App</strong>
+            </span>
+            <span>
+                <a href="#">Main</a>
+            </span>
+            <span>
+                <a href="#">Management</a>
+            </span>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div id="form">
+            <h1>Register Task</h1>
+
+            <form id="tarefas" action="#" method="POST">
+                <label for="ano"></label>
+                <select id="ano" name="ano">
+                    <option value="" disabled selected>Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="mes"></label>
+                <select id="mes" name="mes">
+                    <option value="" disabled selected>Month</option>
+                    <option value="janeiro">Janeiro</option>
+                    <option value="fevereiro">Fevereiro</option>
+                    <option value="marco">Março</option>
+                    <option value="abril">Abril</option>
+                    <option value="maio">Maio</option>
+                    <option value="junho">Junho</option>
+                    <option value="julho">Julho</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="setembro">Setembro</option>
+                    <option value="outubro">Outubro</option>
+                    <option value="novembro">Novembro</option>
+                    <option value="dezembro">Dezembro</option>
+                </select>
+
+                <label for="dia"></label>
+                <select id="dia" name="dia">
+                    <option value="" disabled selected>Day</option>
+                    <!-- Dias de 1 a 31 -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <!-- Continuar com os outros dias... -->
+                    <option value="31">31</option>
+                </select>
+
+                <label for="tipo"></label>
+                <select id="tipo" name="tipo">
+                    <option value="" disabled selected>Type</option>
+                    <option value="pessoal">Pessoal</option>
+                    <option value="profissional">Profissional</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+            </form>
+
+            <form id="adicionar" action="#" method="POST">
+                <label for="adicionar"></label>
+                <input type="text" id="busca" name="adicionar" placeholder="Descrição da tarefa">
+                <button type="submit">Adicionar</button>
+            </form>
+
+
+            <form id="pesquisa" action="#" method="POST">
+                <label for="busca"></label>
+                <input type="search" id="busca" name="busca" placeholder="">
+                <button type="submit">Search</button>
+            </form>
+
+            <table id="table-listagem" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30/09/2024</td>
+                        <td>Estudos</td>
+                        <td>Focar na Prática</td>
+                        <td>
+                            <button onclick="deletarLinha(this)">Deletar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>30/09/2024</td>
+                        <td>Estudos</td>
+                        <td>Focar na Prática</td>
+                        <td>
+                            <button onclick="deletarLinha(this)">Deletar</button>
+                        </td>
+
+                    </tr>
+                    <td>30/09/2024</td>
+                    <td>Estudos</td>
+                    <td>Focar na Prática</td>
+                    <td>
+                        <button onclick="deletarLinha(this)">Deletar</button>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

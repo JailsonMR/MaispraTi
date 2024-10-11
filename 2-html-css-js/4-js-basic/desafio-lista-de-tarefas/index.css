@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 25px;
+}
+
+main {
+    background-color: #e0e0e0;
+    padding: 25px;
+}
+
+#form { /* DIV */
+    width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#tarefas { /* FORM */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+#ano, #mes, #dia {
+    flex: 1;
+    margin-right: 3%;
+    border: 1px solid #e0e0e0;
+    color: #8d8d8d;
+} 
+
+#tipo {
+    flex: 3;
+    border: 1px solid #e0e0e0;
+    color: #8d8d8d;
+} 
+    
+select, input, button {
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
+#form h1 {
+    padding: 20px;
+}
+
+#adicionar { /* FORM */
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#adicionar input, #adicionar button {
+    border: 1px solid #e0e0e0;
+    color: #8d8d8d;
+}
+
+#adicionar input {
+    flex: 5;
+    margin-right: 10%;
+}
+
+#adicionar button {
+    flex: 2;
+    background-color: #1e6428;
+    color: #ffffff;
+}
+
+#pesquisa { /* FORM */
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#pesquisa input, #pesquisa button {
+    border: 1px solid #e0e0e0;
+    color: #8d8d8d;
+}
+
+#pesquisa input {
+    flex: 5;
+    margin-right: 10%;
+}
+
+#pesquisa button {
+    flex: 2;
+    background-color: #262633;
+    color: #ffffff;
+}
+
+#table-listagem {
+    border-top: 2px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    
+}
+
+#table-listagem thead {
+    background-color: #e0e0e0;
+    
+}
+
+#table-listagem thead tr:first-of-type {
+    padding: 10px 0px; 
+}
+
+#table-listagem tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cacaca;
+    padding: 0px;
+}
+
+#table-listagem td {
+    
+    padding: 10px 0px;
+
+}
+
+#table-listagem:last-child {
+    
+}
+
+#table-listagem button {
+    background-color: red;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+}
