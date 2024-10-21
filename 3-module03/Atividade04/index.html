@@ -1,101 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taiane Cake</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div id="cabecalho">
+        <div class="header-content">
             <div class="logo">
-                <div class="logo-all">
-                    <div class="logo-img">
-                        <img src="img/logo.png" height="48px" width="55px" alt="logo">
+                <div>
+                    <div>
+                        <img src="img/b1.png" width="56px" height="50px">
                     </div>
-                    <div class="logo-title">
-                        <h1>Taiane<span class="yelou">CAKE</span></h1>
-                        <h2 class="slogan">Bolos & Doces Personalizados</h2>
+                </div>
+
+                <div>
+                    <h1>
+                        title
+                    </h1>
+                    <h2>
+                        subtitle
+                    </h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#testemunhos">Testemunhos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="btn-menu">
+                btn-menu
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="banner-bg">
+                <div class="banner-content">
+                    <div class="slider">
+                        <div class="slides">
+
+                            <!-- Slide images -->
+                            <div class="slide active">
+                                <div class="slide-content">
+                                    <div class="slide-content-left">
+
+                                    </div>
+                                    <div class="slide-content-right">
+                                        <img src="img/b1.png" alt="Imagem 1" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="img/b2.jpeg" alt="Imagem 2" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/b3.jpeg" alt="Imagem 3" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/b4.jpeg" alt="Imagem 4" />
+                            </div>
+
+                        </div>
+
+                        <div class="Navigation-pointers">
+                            <!-- Radio Buttons // display:none; -->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <!-- Fim Radio Buttons -->
+
+                            <!-- Navigation auto-->
+                            <div class="navigation-auto">
+                                
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                                
+                            </div>
+
+                            <!-- Manual navigation -->
+                            <div class="manual-navigation">
+                                
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                                
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul id="menu">
-                        <li><a href="#home">Sobre</a></li>
-                        <li><a href="#about">Nossos Produtos</a></li>
-                        <li><a href="#services">Depoimentos</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="btn-contato">BTN Encomendar</div>
-            <div class="btn-menu">btn</div>
-        </div>
-    </header>
+        </section>
 
-    <main>
-        <section id="banner">
-            <div class="slides" style="margin-left:0;">
-    
-                <div class="slide">
-                    <div class="bg">
-                        <div class="slidearea">
-                            <div class="slidearea-content">
-                                <div class="slide-description">
-                                    <div class="slide-description-content">
-                                        <div id="div-all">
-                                            <div id="description-div-top">
-                                                <h1 class="title-description">Bolo A <span class="yelou">Testando Bolo</span></h1>
-                                                <h2 class="sub-title-description">Uma Mistura disso e daquilo com gosto coisado!</h2>
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quas ut obcaecati omnis nisi aspernatur perspiciatis? Autem labore blanditiis sed mollitia vel aut quas 
-                                                </p>
-                                                <div class="clear"></div>
-                                            </div>
-                                            <div id="description-div-bottom">
-                                                <a href="" class="more-info">Mais detalhes</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="img-slide">
-                                    <img src="img/logo.png" alt="" width="620px" height="560px">
-                                </div>
-                            </div>
-                                <div class="pointers-all">
-                                    <div class="pointers-content">
-                                        <div class="previous">
-                                            <<
-                                        </div>
-                                        <div class="pointers">
-                                            <div class="pointer active"></div>
-                                            <div class="pointer"></div>
-                                            <div class="pointer"></div>
-                                            <div class="pointer"></div>
-                                            <div class="pointer"></div>
-                                        </div>
-                                        <div class="next">
-                                            >>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-                
+        <section id="sobre" class="light">
+            <div class="light-gb">
+                <div class="sobre-content">
+                    <h1>Sobre</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
             </div>
         </section>
 
+        <section id="servicos" class="dark">
+            <div class="dark-gb">
+                <div class="servicos-content">
+                    <h1>Serviços</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <section id="projetos" class="light">
+            <div class="light-gb">
+                <div class="projetos-content">
+                    <h1>Projetos</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testemunhos" class="dark">
+            <div class="dark-gb">
+                <div class="testemunhos-content">
+                    <h1>Testemunhos</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="light">
+            <div class="light-gb">
+                <div class="contato-content">
+                    <h1>Contato</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-bg">
+                <div class="footer-content">
+                    <h1>Footer</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestias quam architecto! Quidem
+                        quisquam
+                        et id enim suscipit sint at dolore doloremque rem cumque ea necessitatibus odio eos, officiis
+                        provident
+                        saepe eius ratione corrupti mollitia totam voluptatum eligendi qui unde ipsum. Expedita est
+                        culpa totam
+                        eum consectetur tenetur ipsum corrupti?
+                    </p>
+                </div>
+            </div>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Meu Website. Todos os direitos reservados.</p>
-    </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
