@@ -1,8 +1,29 @@
 .body {
-    width: 800px;
+    width: 70%;
     margin: auto;
 }
 
-.div-to-to {
+.div-to-do {
     width: 100%;
+}
+
+.input-task {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.flex {
+    padding: 14px 8px;
+}
+
+i {
+    margin: 0px 10px;
+    border: 1px solid rgba(204, 204, 204, .5);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+i:hover {
+    font-weight: bold;
+    border: 1px solid rgba(204, 204, 204, 1);
 }
