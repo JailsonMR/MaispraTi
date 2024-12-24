@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>React Challenges</h1>
+      <h1>Atividade 07 - Projeto em React</h1>
       <div className="component-selector">
         {components.map((comp, index) => (
           <button 
