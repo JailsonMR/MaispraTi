@@ -6,20 +6,20 @@
 
 ## São 10 componentes React desenvolvidos para praticar conceitos como useState, useEffect, manipulação de estado e eventos.
 
-Componentes:
+### Componentes:
 
 - Contador Simples
 - Alteração de Cor de Fundo
 - Lista de Tarefas
-- Temporizador**
-- Filtro de Lista**
-- Formulário de Registro**
-- Requisição de Dados**
-- Galeria de Imagens**
-- Timer com Intervalo e Alerta**
-- Componentes com Tabs Navegáveis**
+- Temporizador
+- Filtro de Lista
+- Formulário de Registro
+- Requisição de Dados
+- Galeria de Imagens
+- Timer com Intervalo e Alerta
+- Componentes com Tabs Navegáveis
 
-*Instalação*
+### Instalação:
 
 - Clone o repositório
 - Instale as dependências: npm install
